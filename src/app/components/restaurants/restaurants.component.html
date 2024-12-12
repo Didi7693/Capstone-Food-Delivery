@@ -1,0 +1,10 @@
+<div class="restaurants">
+    <h2>Restaurants</h2>
+    <ul>
+      <ng-container *ngFor="let restaurant of restaurants">
+        <li (click)="viewDishes(restaurant.id)">
+          {{ restaurant.name }} - {{ restaurant.location }}
+        </li>
+      </ng-container>
+    </ul>
+</div>

@@ -1,0 +1,10 @@
+<div class="dishes">
+    <h2>Dishes</h2>
+    <ul>
+        <li *ngFor="let dish of dishes" (click)="addToCart(dish)">
+            {{ dish.name }} - {{ formatCurrency(dish.price) }}
+        </li>
+    </ul>
+</div>
+
+  

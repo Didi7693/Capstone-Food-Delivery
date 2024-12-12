@@ -1,0 +1,6 @@
+<div *ngFor="let item of cartItems">
+    <p>Item total: {{ item.total | currency }}</p>
+  </div>
+  
+  <p>Total: {{ calculateTotal() | currency }}</p>
+  
